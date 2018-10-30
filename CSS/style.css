@@ -1164,10 +1164,7 @@ margin: 1em 0em
 
 /*droom verhaal styling*/
 header {
-z-index: 1;    
-}
-#droom main{
-
+z-index: 2;    
 }
 
 #droom section:first-of-type p {
@@ -1178,6 +1175,8 @@ padding: 1em;
 min-width: 20em;
 max-width: 30em;
 line-height: 2em;
+    z-index: 1;
+    
 }
 
 #droom section:first-of-type p {
@@ -1207,6 +1206,7 @@ padding-bottom: 5em;
 
 #droom section:first-of-type article {
 width: 100%;
+z-index: 1;
 }
 
 #droom section article:first-of-type div {
@@ -1241,7 +1241,8 @@ animation: ease-in;
 transition: 0.25s;
 top: 0;
 left: 0;
-    width: 90%;
+width: 80vw;
+    max-width: 30em;
 }
 
 #droom section article:first-of-type div img:last-of-type {
@@ -1250,7 +1251,8 @@ left: .5em;
 filter: blur(.08em);
 animation: ease-in;
 transition: 0.25s;
-    width: 90%;
+width: 80vw;
+    max-width: 30em;
     
 }
 
@@ -1377,7 +1379,7 @@ height: 5em;
 background-repeat: no-repeat;
 position: absolute;
 top: 18em;
-right: 15em;
+right: 50vw;
 bottom: 0;
 width: 15em;
 background-position: right;
@@ -1453,7 +1455,7 @@ margin: 1em 0 0 0;
 #droom section:nth-child(2) > p {
 color: #102F7D;
 max-width: 32em;
-margin: 0 auto
+margin: 0 auto;
 }
 
 #droom section:nth-child(2) article {
@@ -1658,6 +1660,10 @@ max-width: 66em;
 margin: auto auto;
 box-sizing: border-box;
 }
+    #droom section > div:nth-child(3) {
+        right: 30vw;
+        top: 9em;
+    }
 
 #droom section:first-of-type article:first-of-type {
 grid-column-start: 1;
@@ -1705,7 +1711,6 @@ margin: 0em auto 0 0;
 }
 
 #droom section > div:nth-child(2) {
-background-image: url(../SOURCE/droom/maan.svg);
 height: 30em;
 background-repeat: no-repeat;
 position: absolute;
@@ -1713,8 +1718,6 @@ top: -8em;
 right: 1em;
 bottom: 0;
 width: 20em;
-background-position: left;
-animation: maanzon 2s ease-in infinite;
 }
 
 #droom section:first-of-type article:nth-child(5) div::before {
@@ -1751,7 +1754,7 @@ height: 20em;
 
 #droom section:first-of-type article:first-of-type img {
 margin: auto auto -8em auto;
-width: 30em
+width: 30em;
 }
 
 #droom section:first-of-type article:first-of-type div {
