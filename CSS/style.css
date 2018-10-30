@@ -1220,9 +1220,7 @@ position: relative;
     padding: 0;
     margin: 0;
 }
-#droom section:first-of-type article div:first-of-type img{
-    
-}
+
 #droom section:first-of-type article div img {
 width: 20em;
 left: 0;
@@ -1317,7 +1315,7 @@ width: 6em;
 color: #D2CB1C;
 position: absolute;
 top: -2em;
-left: 30vw;
+left: 20vw;
 right: 0em;
 transform: rotate(-5deg);
 animation: wathetlijkt 7s ease-in infinite;
@@ -1332,7 +1330,7 @@ width: 6em;
 color: #D21275;
 position: absolute;
 top: -2.05em;
-left: 30.4vw;
+left: 20.4vw;
 right: 0em;
 transform: rotate(-5deg);
 animation: wathetlijkt 10s ease-in infinite;
@@ -1721,6 +1719,9 @@ width: 20em;
 }
 
 #droom section:first-of-type article:nth-child(5) div::before {
+left: 10vw;
+}
+    #droom section:first-of-type article:nth-child(5) div::after {
 left: 10vw;
 }
 #droom section > div:nth-child(2){

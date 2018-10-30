@@ -1,2 +1,1 @@
 # Project WEB Frontend Development
-IN de HTML map kunnen de pagina's worden gevonden van de overzicht pagina, verhaal pagina en inlog/aanmeld pagina. De CSS is ingedeeld met comments die het script opdelen in 3 delen. De javascript is met comments opgedeeld per interactie. Elke pagina heeft een eigen deel. In de source map kunnen alle foto's en overige bestanden worden gevonden waar naartoe wordt gelinkt in de HTML structuur.
