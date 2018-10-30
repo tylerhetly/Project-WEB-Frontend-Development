@@ -1213,12 +1213,16 @@ width: 100%;
 height: 20em;
 padding-top: 4em;
 position: relative;
-margin-bottom: -4em
 }
 #droom section article:first-of-type div h2{
     color: transparent;
+    height: 0;
+    padding: 0;
+    margin: 0;
 }
-
+#droom section:first-of-type article div:first-of-type img{
+    
+}
 #droom section:first-of-type article div img {
 width: 20em;
 left: 0;
@@ -1237,6 +1241,7 @@ animation: ease-in;
 transition: 0.25s;
 top: 0;
 left: 0;
+    width: 90%;
 }
 
 #droom section article:first-of-type div img:last-of-type {
@@ -1245,6 +1250,8 @@ left: .5em;
 filter: blur(.08em);
 animation: ease-in;
 transition: 0.25s;
+    width: 90%;
+    
 }
 
 #droom section article:first-of-type div img:last-of-type:hover {
