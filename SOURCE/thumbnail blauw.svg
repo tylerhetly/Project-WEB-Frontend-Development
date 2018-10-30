@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="20px" viewBox="0 0 10 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Wireframes-huistijl2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overzicht-(smartphone)" transform="translate(-252.000000, -85.000000)" fill="#102F7D" fill-rule="nonzero">
+            <g id="Group-22" transform="translate(5.000000, 62.000000)">
+                <path d="M261.616233,37.9998153 C261.518038,37.9998153 261.419842,37.9636162 261.344662,37.8919568 L252.001534,28.8916797 L242.654571,37.8919568 C242.504977,38.0360144 242.26179,38.0360144 242.112196,37.8919568 C241.962601,37.7478992 241.962601,37.5137132 242.112196,37.3696556 L251.73073,28.1078585 C251.802075,28.0391541 251.899503,28 252.001534,28 C252.103565,28 252.200993,28.0391541 252.273106,28.1078585 L261.887804,37.3689168 C262.037399,37.5129744 262.037399,37.7471604 261.887804,37.891218 C261.812623,37.9636162 261.714428,37.9998153 261.616233,37.9998153 Z" id="Shape" transform="translate(252.000000, 33.000000) rotate(-270.000000) translate(-252.000000, -33.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

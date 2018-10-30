@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>99 verhalen</title>
+    <link type="text/css" href="../CSS/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="homepagina">
+    <!--   Header van de pagina-->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="../SOURCE/Nederlandse-spoorwegen-NS-logo.png" alt="NS logo">
+                <h1>Overzicht</h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="../SOURCE/download.svg" alt="Verhaal downloaden icon"> <span>Gedownloaden verhalen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html"><img src="../SOURCE/headerbookmark.svg" alt="Opgeslagen verhalen icon"><span>Opgeslagen verhalen</span><span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Aanmelden.html"><img src="../SOURCE/headerprofiel.svg" alt="mijn account icon"><span>Tyler Gilds</span></a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="../SOURCE/headerzoeken.svg" alt="zoeken icon"><span>Zoeken</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--       Banner met aanbevolen verhalen-->
+        <section>
+            <div>
+                <a href="droom.html">
+                    <article>
+                        <h2>Geinspireerd op uw eerdere keuzes:</h2>
+                        <p>Zweverig</p>
+                        <h3>3. Droom</h3>
+                        <ul>
+                            <li>Verhaal 3 bekijken</li>
+                        </ul>
+                    </article>
+                </a>
+            </div>
+
+        </section>
+        <!--        Verderlezen-->
+        <section>
+            <a href="droom.html">
+                <article>
+                    <h2>Verder lezen:</h2>
+                    <h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+                    <p>Tijd om uit te lezen: 3 min.</p>
+                </article>
+            </a>
+        </section>
+        <!--        Start van het overzicht met verhalen-->
+        <section>
+               <h2>Zoek een verhaal</h2>
+                <p>99 verhalen gevonden</p>
+            <!--            article met filterknoppen bovenaan het overzicht op mobile viewport-->
+            <article>
+                <form>
+                    <button type="button" id="filterknop"><img src="../SOURCE/selecticon.svg" alt="filter icon">Filteren</button>
+                    <select name="Sorteren">
+                        <option value="datum">Datum (recent-oud)</option>
+                        <option value="waardering">Waardering (hoog-laag)</option>
+                        <option value="reacties">Reacties (veel-weinig)</option>
+                    </select>
+                </form>
+            </article>
+        </section>
+<!--        `filters en alle verhalen in het overzicht-->
+        <section>
+            <!--            article met alle filters-->
+            <article>
+                <div>
+                    <form method="POST" action="filterresultaat.html">
+                        <h3>Filteren</h3>
+                        <img src="../SOURCE/sluiten.svg" alt="sluiten icon">
+                        <button>Filters verwijderen</button>
+                        <fieldset>
+                            <legend>Sorteren</legend>
+                            <label><input type="radio" name="sorteren" value="Reacties (veel - Weinig)" />Aantal reacties (veel - weinig)</label>
+                            <label><input type="radio" name="sorteren" value="Datum (recent-oud)" checked />Datum (recent-oud)</label>
+                            <label><input type="radio" name="sorteren" value="Waardering (hoog-laag)" />Waardering (hoog-laag)</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Leesduur</legend>
+                            <div>
+                                <label>
+                                minuten
+                                <input type="range" min="1" max="100" value="50" class="slider">
+                            </label>
+                                <output>12</output>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Persoonlijk</legend>
+                            <div>
+                            <label>
+                                <input type="checkbox"> <span></span>Aanbevolen verhalen
+                            </label>
+                                <output>12</output>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Genre</legend>
+                            <div><label>
+                                <input type="checkbox"><span></span>Bekende personen
+                            </label>
+                                                            <output>15</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Literatuur
+                            </label>
+                                                            <output>12</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Nabootsing
+                            </label>
+                                <output>23</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Poezie
+                            </label>
+                                <output>12</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Somber
+                            </label>
+                                <output>53</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Speels
+                            </label>
+                                <output>12</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Verhalend
+                            </label>
+                                <output>75</output></div>
+                            <div><label>
+                                <input type="checkbox"><span></span>Zweverig
+                            </label>
+                                <output>25</output></div>
+                        </fieldset>
+                        <input type="submit" value="Alle verhalen bekijken">
+                    </form>
+                </div>
+            </article>
+            <!--            Lijst met verhalen in het overzicht-->
+            <article>
+                <img src="../SOURCE/Verhaalthumbnails/droom.png" alt="Verhaal 3 foto">
+                <footer>
+                    <ul>
+                        <li><img src="../SOURCE/ster.svg" alt="beoordeling icoon">
+                            <p>4.4</p>
+                        </li>
+                        <li><img src="../SOURCE/boek.svg" alt="leesduur icoon">
+                            <p>5 min</p>
+                        </li>
+                        <li><img src="../SOURCE/kalender.svg" alt="Kalender icon">
+                            <p>02-08-18</p>
+                        </li>
+                        <li><button><img src="../SOURCE/downloadverhaal.svg" alt="download icon"></button>
+                        </li>
+                        <li>
+                            <button>
+                                <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 55">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                stroke: #102f7d;
+                                                stroke-miterlimit: 10;
+                                            }
+
+                                        </style>
+                                    </defs>
+                                    <title>bookmark (2)</title>
+                                    <path class="cls-1" d="M27.5.5h-16V53.94a.56.56,0,0,0,.95.39L27.5,39.28,42.55,54.34a.56.56,0,0,0,.95-.39V.5Z" transform="translate(-11 0)" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </footer>
+                <p>Zweverig</p>
+                <h3>3. Droom</h3>
+                <ul>
+                    <li><a href="droom.html">Verhaal 3 lezen</a></li>
+                </ul>
+            </article>
+            <article>
+                <img src="../SOURCE/Verhaalthumbnails/cruijf.png" alt="Verhaal 14 foto">
+                <footer>
+                    <ul>
+                        <li><img src="../SOURCE/ster.svg" alt="beoordeling icon">
+                            <p>3.5</p>
+                        </li>
+                        <li><img src="../SOURCE/boek.svg" alt="leesduur icon">
+                            <p>10 min</p>
+                        </li>
+                        <li><img src="../SOURCE/kalender.svg" alt="datum icon">
+                            <p>02-04-17</p>
+                        </li>
+                        <li><button><img src="../SOURCE/downloadverhaal.svg" alt="download icon"></button>
+                        </li>
+                        <li> <button>
+                                <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 55">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                                stroke: #102f7d;
+                                                stroke-miterlimit: 10;
+                                            }
+
+                                        </style>
+                                    </defs>
+                                    <title>bookmark (2)</title>
+                                    <path class="cls-1" d="M27.5.5h-16V53.94a.56.56,0,0,0,.95.39L27.5,39.28,42.55,54.34a.56.56,0,0,0,.95-.39V.5Z" transform="translate(-11 0)" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </footer>
+                <p>Bekende personen</p>
+                <h3>14. Johan Cruijff</h3>
+                <ul>
+                    <li><a href="droom.html">Verhaal 14 lezen</a></li>
+                </ul>
+            </article>
+            <article>
+                <img src="../SOURCE/Verhaalthumbnails/essentie.png" alt="Verhaal 2 foto">
+                <footer>
+                    <ul>
+                        <li><img src="../SOURCE/ster.svg" alt="beoordeling icon">
+                            <p>4.1</p>
+                        </li>
+                        <li><img src="../SOURCE/boek.svg" alt="leesduur icon">
+                            <p>6 min</p>
+                        </li>
+                        <li><img src="../SOURCE/kalender.svg" alt="datum icon">
+                            <p>01-07-17</p>
+                        </li>
+                        <li><button><img src="../SOURCE/downloadverhaal.svg" alt="downloaden icon"></button>
+                        </li>
+                        <li><button><svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 55">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                                stroke: #102f7d;
+                                                stroke-miterlimit: 10;
+                                            }
+
+                                        </style>
+                                    </defs>
+                                    <title>bookmark (2)</title>
+                                    <path class="cls-1" d="M27.5.5h-16V53.94a.56.56,0,0,0,.95.39L27.5,39.28,42.55,54.34a.56.56,0,0,0,.95-.39V.5Z" transform="translate(-11 0)" />
+                                </svg></button>
+                        </li>
+                    </ul>
+                </footer>
+                <p>Literatuur</p>
+                <h3>2. Essentie</h3>
+                <ul>
+                    <li><a href="droom.html">Verhaal 2 lezen</a></li>
+                </ul>
+            </article>
+            <article>
+                <img src="../SOURCE/Verhaalthumbnails/vrijeversvorm.png" alt="verhaal 19 foto">
+                <footer>
+                    <ul>
+                        <li><img src="../SOURCE/ster.svg" alt="beoorddeling icon">
+                            <p>3.0</p>
+                        </li>
+                        <li><img src="../SOURCE/boek.svg" alt="leesduur icon">
+                            <p>8 min</p>
+                        </li>
+                        <li><img src="../SOURCE/kalender.svg" alt="datum icon">
+                            <p>21-02-17</p>
+                        </li>
+                        <li><button><img src="../SOURCE/downloadverhaal.svg" alt="verhaal downloaden icon"></button>
+                        </li>
+                        <li><button>
+                                <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 55">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                                stroke: #102f7d;
+                                                stroke-miterlimit: 10;
+                                            }
+
+                                        </style>
+                                    </defs>
+                                    <title>bookmark (2)</title>
+                                    <path class="cls-1" d="M27.5.5h-16V53.94a.56.56,0,0,0,.95.39L27.5,39.28,42.55,54.34a.56.56,0,0,0,.95-.39V.5Z" transform="translate(-11 0)" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </footer>
+                <p>Speels</p>
+                <h3>19. Vrijeversvorm</h3>
+                <ul>
+                    <li><a href="droom.html">Verhaal 19 lezen</a></li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <footer>
+                <ul>
+                    <li><a>Over NS</a></li>
+                    <li><a>Reisinformatie</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </footer>
+        </section>
+    </main>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

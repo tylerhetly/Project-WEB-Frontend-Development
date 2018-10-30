@@ -1,0 +1,1824 @@
+/*##################################################################*/
+/*Ingeladen fonts*/
+/*##################################################################*/
+@font-face {
+font-family: "freeset";
+src: url("../SOURCE/fonts/freeset.ttf") format("truetype");
+}
+@font-face {
+font-family: "freeset-bold";
+src: url("../SOURCE/fonts/freeset-bold.ttf") format("truetype");
+}
+@font-face {
+font-family: "Somatic-Rounded";
+src: url("../SOURCE/fonts/Somatic-Rounded.otf") format("truetype");
+}
+
+/*##################################################################*/
+/*Gebruikte key-frames*/
+/*##################################################################*/
+
+@keyframes vallendester {
+0% {
+width: 0em;
+}
+60% {
+width: 5em
+}
+100% {
+width: 19em;
+}
+}
+@keyframes blur {
+0% {
+filter: blur(.0em);
+}
+60% {
+filter: blur(.1em);
+}
+100% {
+filter: blur(.0em);
+}
+}
+@keyframes sterren {
+0% {
+background-position: 0 0;
+}
+50% {
+background-position: 1em .2em;
+}
+}
+@keyframes maanzon {
+0% {
+filter: blur(.0em);
+}
+50% {
+filter: blur(.1em);
+}
+100% {
+filter: blur(.0em);
+}
+}
+@keyframes wathetlijkt {
+0% {
+filter: blur(0em);
+}
+50% {
+filter: blur(4em);
+}
+100% {
+filter: blur(0em);
+}
+}
+@keyframes illustratie1 {
+0% {
+top: 0;
+left: 0;
+}
+50% {
+top: .1em;
+left: .5em;
+filter: blur(.05em);
+}
+100% {
+top: 0;
+left: 0;
+}
+}
+@keyframes illustratie2 {
+0% {
+top: 0;
+left: 0;
+}
+50% {
+top: -.5em;
+left: -.5em;
+filter: blur(.05em);
+}
+100% {
+top: 0;
+left: 0;
+}
+}
+@keyframes buttonshake {
+5% {
+background-color: #F6CA48;
+padding: .8em;
+box-shadow: rgb(195, 148, 9) 0px -3px 0px 0px inset;
+}
+95% {
+background-color: #F6CA48;
+padding: .8em;
+box-shadow: rgb(195, 148, 9) 0px -3px 0px 0px inset;
+    
+}
+100% {
+background-color: #3377CC;
+padding: .3em;
+box-shadow: rgb(195, 148, 9) 0px -3px 0px 0px inset;
+
+}
+}
+@keyframes illustratie1 {
+0% {
+top: 0;
+left: 0;
+}
+50% {
+top: .1em;
+left: .5em;
+filter: blur(.05em);
+}
+100% {
+top: 0;
+left: 0;
+}
+}
+
+/*##################################################################*/
+/*Algemene selectors*/
+/*##################################################################*/
+* {
+font-family: freeset, arial;
+}
+
+body {
+background-color: #E6E5E8;
+padding: 0px;
+margin: 0px;
+}
+
+a {
+text-decoration: none;
+}
+
+header h1 {
+font-size: 1.3em;
+color: #102F7D;
+}
+
+h2 {
+font-size: 1.250em;
+color: #102F7D;
+}
+
+h3 {
+font-size: 1em;
+color: #102F7D;
+}
+
+p {
+font-size: 1em;
+color: black;
+}
+
+main {
+padding-top: 4em;
+}
+
+header {
+background-color: white;
+width: 100%;
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+position: fixed;
+height: 4em;
+display: flex;
+align-content: flex-end;
+}
+
+header nav {
+margin: 0 auto;
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+header nav > a:first-child {
+display: flex;
+align-items: center;
+}
+
+header nav > a:first-child img {
+height: 1em;
+margin-right: .5em;
+}
+
+nav ul {
+padding: 0px;
+width: 40%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+}
+
+header ul li {
+list-style: none;
+}
+
+header ul li a {
+display: flex;
+align-items: center;
+font-size: 1em;
+color: #102F7D;
+}
+
+header ul li a img {
+height: 1em;
+}
+
+header ul li a img {
+font-size: 1.4em;
+}
+
+header ul li:nth-child(2) span {
+position: relative;
+}
+
+header ul li span:first-of-type {
+margin-left: 1em;
+display: none
+}
+
+header nav li:nth-child(2) > a > span {
+position: relative;
+}
+
+header span:nth-child(3) {
+height: 0;
+overflow: hidden;
+}
+svg {
+width: 1.7em;
+    stroke-width: .3em;
+
+}
+/*##################################################################*/
+/*home pagina styling*/
+/*##################################################################*/
+
+/*Micro interactie styling*/
+#homepagina span:nth-child(3).notificatie {
+background-color: #F6CA48;
+padding: .1em .5em;
+border-radius: 1em;
+position: absolute;
+top: -.8em;
+left: .3em;
+height: auto;
+transition: .25s;
+animation: ease-in;
+}
+
+#homepagina header nav ul li:nth-child(2) {
+position: relative;
+}
+
+#homepagina section:first-of-type div {
+margin: auto auto;
+max-width: 32em;
+}
+
+/*banner styling*/
+#homepagina section:first-of-type {
+background-image: url(../SOURCE/Verhaalthumbnails/droom.png);
+height: 300px;
+background-repeat: no-repeat;
+background-size: cover;
+margin: auto;
+width: 100%;
+padding-top: .5em;
+}
+
+#homepagina section:first-of-type article {
+background-color: rgba(0, 48, 130, 0.85);
+padding: 1em;
+box-sizing: border-box;
+width: calc(100% - 1em);
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+margin: auto;
+}
+
+#homepagina section:first-of-type p,
+#homepagina section:first-of-type h2,
+#homepagina section:first-of-type h3 {
+color: white;
+margin: 0px;
+padding: 0px;
+font-size: 1em;
+}
+
+#homepagina section:first-of-type h2 {
+margin-bottom: .4em;
+font-size: 1em
+}
+
+#homepagina section:first-of-type p:nth-child(2) {
+margin-bottom: .4em;
+font-family: freeset-bold;
+;
+}
+
+#homepagina section:first-of-type ul {
+list-style: url(../SOURCE/sitelinkitemwit.svg);
+padding-left: 1em;
+color: white;
+margin: .8em 0;
+}
+
+#homepagina section:first-of-type ul li a {
+margin-left: .5em;
+color: white;
+}
+
+/*Verder lezen styling*/
+#homepagina section:nth-child(2) {
+max-width: 32em;
+min-width: 22em;
+margin: auto auto;
+padding: 0 .5em;
+}
+
+#homepagina section:nth-child(2) article {
+margin-top: 1em;
+background-color: #F6CA48;
+padding: 1em;
+box-sizing: border-box;
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+background-image: url("../SOURCE/verderlezenpijl.svg");
+background-position: 90% 50%;
+background-repeat: no-repeat;
+}
+
+#homepagina section:nth-child(2) p,
+#homepagina section:nth-child(2) h2 {
+color: #102F7D;
+margin: 0px;
+padding: 0px;
+width: 85%;
+}
+
+#homepagina section:nth-child(2) article p:first-of-type {
+margin-bottom: .4em;
+}
+
+#homepagina section:nth-child(2) h2 {
+margin-bottom: .4em;
+}
+
+/*    filter en sorteer knoppen*/
+#homepagina section:nth-child(3) {
+max-width: 32em;
+max-width: 32em;
+min-width: 22em;
+margin: auto auto;
+padding: .5em
+}
+
+#homepagina section:nth-child(3) article:first-of-type {
+background-color: #E6E5E8;
+box-shadow: none;
+}
+
+#homepagina section:nth-child(3) p:nth-child(2) {
+color: #102F7D;
+}
+
+#homepagina section:nth-child(3) p:nth-child(3) {
+color: #58585A;
+}
+
+#homepagina section:nth-child(3) article > form:first-of-type {
+padding: 0px;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-column-gap: 1em;
+width: calc(100% - 1em);
+}
+
+#homepagina section:nth-child(3) article form > button:nth-child(1) {
+background-color: #3377CC;
+color: white;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+background-image: url("../SOURCE/filterbutton.svg");
+background-position: 30% 50%;
+background-repeat: no-repeat;
+box-shadow: rgb(0, 92, 160) 0px -2px 0px 0px inset;
+}
+
+#homepagina section:nth-child(3) form select {
+background-color: white;
+color: #3377CC;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+background-image: url("../SOURCE/selecticon.svg");
+background-position: 95% 50%;
+background-repeat: no-repeat;
+width: calc(100% - 0.5em);
+grid-column-start: 2;
+}
+
+#homepagina section:nth-child(3) form select,
+#homepagina section:nth-child(3) form button {
+padding: .8em;
+border: 0px;
+font-size: .8em;
+width: 100%;
+}
+#homepagina section:nth-child(3) form button:first-of-type:hover{
+    box-shadow: rgb(0, 92, 160) 0px -40px 0px 0px inset;
+    transition: .5s;
+}
+
+#homepagina section:nth-child(3) p {
+margin-top: -.5em
+    
+}
+
+/*Filter menu styling*/
+#homepagina section:nth-child(3) article > form:nth-child(3) h2 {
+margin: 1em auto 1em 1em;
+}
+#homepagina form input[type="submit"] {
+padding: .3em;
+border: 0px;
+width: 100%;
+font-size: 1em;
+background-color: #3377CC;
+color: white;
+background-repeat: no-repeat;
+box-shadow: rgb(0, 92, 160) 0px -2px 0px 0px inset;
+display: grid;
+margin: auto auto;
+box-sizing: border-box;
+}
+#homepagina form input[type="submit"]:hover{
+    box-shadow: rgb(0, 92, 160) 0px -40px 0px 0px inset;
+    transition: .5s;
+}
+
+#homepagina form input[type="submit"].filterFeedback {
+animation-name: buttonshake;
+animation-duration: 3s;
+}
+
+#homepagina section:nth-child(4) fieldset:nth-child(7) > label:nth-child(2) > input {
+margin-right: 2em;
+}
+
+form output {
+font-family: freeset-bold;
+color: #7B7C7F;
+margin-left: auto;
+}
+
+/*overzicht verhalen styling*/
+#homepagina section:nth-child(4){
+max-width: 32em;
+min-width: 22em;
+margin: auto auto;
+padding: 0px .5em;
+}
+
+#homepagina section:nth-child(4) 
+ article {
+background-color: white;
+padding: 1em;
+box-sizing: border-box;
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+margin: 1em auto;
+max-width: 32em;
+min-width: 22em;
+}
+
+#homepagina section:nth-child(4) 
+ article > img {
+width: calc(100% + 2em);
+margin: -1em -1em -0.5em -1em;
+height: 200px;
+background-color: white;
+object-fit: cover;
+}
+
+#homepagina section:nth-child(4) 
+ article > p:first-of-type {
+font-family: freeset-bold;
+color: #102F7D;
+}
+
+#homepagina section:nth-child(4) 
+ article h3 {
+margin: -.1em 0em .2em 0em;
+line-height: 1.5em;
+min-width: 20em;
+height: 3em;
+}
+
+#homepagina section:nth-child(4) 
+ article footer ul {
+width: 100%;
+display: grid;
+grid-template-columns: auto auto auto auto 3em 3em;
+margin: 0;
+padding: 0;
+align-items: flex-end;
+}
+
+#homepagina section:nth-child(4) 
+ article footer ul li p {
+color: #7B7A7A;
+}
+
+#homepagina section:nth-child(4) 
+ article footer ul li {
+display: flex;
+margin: .3em 0 -.5em 0;
+}
+
+#homepagina section:nth-child(4) 
+ article ul li button {
+cursor: pointer;
+border: none;
+padding: 0px;
+margin: 0px;
+background-color: white;
+}
+
+#homepagina section:nth-child(4) article ul li:nth-child(4) {
+grid-column-start: 5;
+justify-self: end;
+margin: 0;
+}
+
+#homepagina section:nth-child(4) article ul li:nth-child(4) img {
+margin: 0;
+padding: 0;
+}
+
+#homepagina section:nth-child(4) article ul li:nth-child(5) {
+grid-column-start: 6;
+justify-self: end;
+margin: 0;
+}
+
+#homepagina section:nth-child(4) article ul li:nth-child(4) button {
+font-size: 1.3em;
+margin: 0;
+}
+
+button svg {
+pointer-events: none;
+}
+
+.fill svg .cls-1 {
+fill: #3377CC;
+animation: ease-in;
+    transition: .25s;
+}
+
+#homepagina section:nth-child(4) article footer ul li img {
+margin-right: .5em;
+width: 1em;
+}
+
+#homepagina section:nth-child(4) article ul {
+list-style: url(../SOURCE/sitelinklistitem.svg);
+}
+
+#homepagina section:nth-child(4) article > p:last-of-type {
+margin: -.3em 0em 0em 0em;
+line-height: 2em;
+}
+
+#homepagina section:nth-child(4) article ul {
+padding-left: 1em;
+}
+
+#homepagina section:nth-child(4) article ul li button img {
+width: 1.8em;
+}
+
+#homepagina section:nth-child(4) article a {
+color: #3377CC;
+margin-left: 30px;
+}
+
+/*footer styling*/
+#homepagina section:nth-child(5) {
+background-color: white;
+height: 10em;
+width: 100%;
+margin-top: 10em;
+}
+
+#homepagina section:nth-child(5) ul {
+list-style: url(../SOURCE/sitelinklistitem.svg);
+color: #3377CC;
+padding: 2em 1em 0em 1em;
+width: 80%;
+margin: auto auto 0em;
+}
+
+#homepagina section:nth-child(5) ul li a {
+margin-left: .5em;
+}
+
+#homepagina section:nth-child(5) ul li {
+margin: 1em 0em
+}
+
+/*filters*/
+
+#homepagina section:nth-child(4) div:first-child{
+position: fixed;
+left: -30em;
+background-color: white;
+top: 0;
+height: 100vh;
+width: 19em;
+padding: 1em 1.5em ;
+box-sizing: border-box;
+transition: .25s;
+    
+}
+
+#homepagina section:nth-child(4) > article:nth-child(1) {
+position: fixed;
+top: 0;
+left: -40em;
+height: 100vh;
+width: 100vw;
+background-color: rgba(0, 0, 0, 0.6);
+margin: 0;
+padding: 0;
+transition: .25s;
+}
+
+#homepagina section:nth-child(4) div.filtermenu {
+left: -0em;
+z-index: 2;
+}
+
+body#homepagina section:nth-child(4) > article:nth-child(1).filtermenu {
+left: 10em;
+    z-index: 2;
+}
+
+#homepagina section:nth-child(4) form input[type="submit"] {
+margin-top: .2em
+}
+
+#homepagina section:nth-child(4) > article:first-of-type fieldset:first-of-type {}
+
+#homepagina section:nth-child(4) > article:first-of-type form h3 {
+font-size: 1.25em;
+color: #102F7D;
+margin: 0 0 -2em 0;
+}
+
+#homepagina section:nth-child(4) label {
+display: flex;
+margin: 0em auto 1em 0em;
+}
+
+fieldset {
+border: none;
+margin: 0em 0em 0 0em;
+padding: 0
+}
+
+legend {
+font-size: 1em;
+color: #102F7D;
+margin: 0em 0em .5em 0;
+padding: 0px;
+}
+
+#homepagina section:nth-child(4) > article:first-of-type div form fieldset div{
+    display: flex;
+}
+
+#homepagina section:nth-child(4) > article:first-of-type div form input[type=submit]{
+}
+
+#homepagina section:nth-child(4) > article:first-of-type form button {
+padding: 0;
+margin: 1em auto 1em 0em;
+font-size: 1em;
+color: #7B7A7A;
+border: none;
+background: white;
+}
+
+#homepagina section:nth-child(4) > article:first-of-type img{
+position: absolute;
+left: 16.5em;
+right: 0em;
+top: 1.3em;
+bottom: 0em;
+    cursor: pointer;
+}
+
+/*checkbox styling*/
+[type=checkbox] {
+position: absolute;
+z-index: -1;
+width: 2em;
+}
+
+#homepagina section:nth-child(4) label span {
+width: 1em;
+height: 1em;
+background: white;
+border: 0.06em solid grey;
+margin-right: .5em;
+}
+
+#homepagina section:nth-child(4) label [type=checkbox]:checked ~ span {
+background-image: url(../SOURCE/check.svg);
+background-size: cover;
+}
+
+#homepagina section:nth-child(4) label [type=checkbox]:focus ~ span {
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+transition: .10s;
+border: 2px solid #102F7D;
+    box-sizing: border-box;
+}
+
+/*overzicht breakpoints
+
+/*major breakpoint 1*/
+@media screen and (min-width: 43em) {
+#homepagina section:first-of-type {
+background-position: 0% 0%;
+background-repeat: no-repeat;
+padding-top: 2em;
+}
+
+#homepagina section:first-of-type div {
+display: grid;
+grid-template-columns: 66% auto;
+grid-column-gap: 1em;
+min-width: 39em;
+max-width: 49em;
+margin: 0 auto;
+}
+
+#homepagina section:first-of-type article {
+width: 100%;
+margin: 0;
+grid-column-start: 1;
+}
+
+#homepagina section:first-of-type article h3 {
+max-width: 30em;
+}
+
+#homepagina section:nth-child(2) {
+display: grid;
+grid-template-columns: 50.5% 49.5%;
+grid-column-gap: 2em;
+max-width: 49em;
+padding: 1em 2em 2em 2em;
+margin: auto auto;
+}
+#homepagina section:nth-child(3){
+     max-width: 49em;
+padding: 0 2em;
+margin: auto auto;   
+    }
+#homepagina section:nth-child(3) article {
+display: grid;
+grid-template-columns: 15em auto;
+grid-column-gap: 2em;
+margin-bottom: .5em;
+}#homepagina section:nth-child(3) article {
+display: grid;
+grid-template-columns: 15em auto;
+grid-column-gap: 2em;
+margin-bottom: .5em;
+}
+#homepagina section:nth-child(4) article:first-of-type div{
+display: grid;
+grid-template-columns: 15em auto;
+grid-column-gap: 2em;
+margin: 0;
+}
+
+#homepagina section:nth-child(3) article * {
+margin: 0;
+padding: 0;
+}
+
+#homepagina section:nth-child(3) article p {
+color: #102F7D;
+}
+
+#homepagina section:nth-child(3) article form * {
+display: none;
+}
+
+#homepagina section:nth-child(4) {
+display: grid;
+grid-template-columns: 15em auto;
+grid-column-gap: 2em;
+margin: auto auto;
+padding: 0 2em;
+min-width: 39em;
+max-width: 49em;
+grid-row-gap: 2em;
+}
+
+#homepagina section:nth-child(3) p:nth-child(3) {
+display: none;
+}
+
+#homepagina section:nth-child(4) article:first-of-type,
+#homepagina section:nth-child(4) article:first-of-type div {
+position: static;
+height: auto;
+width: 15em;
+background-color: #E6E4E7;
+margin: 0em;
+padding: 0em;
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 5;
+box-shadow: none;
+left: 0;
+transition: 0s;
+}
+
+#homepagina section:nth-child(4) > article:first-of-type form h3 {
+display: none;
+}
+
+#homepagina section:nth-child(4) > article:first-of-type img {
+display: none;
+}
+
+#homepagina section:nth-child(4) article:first-of-type div input[type="submit"]:last-of-type {
+display: none;
+}
+
+#homepagina section:nth-child(4) article:first-of-type div button:first-of-type {
+cursor: pointer;
+margin: 0em 0 1em 0;
+background-color: #E6E5E8;
+}
+
+#homepagina section:nth-child(4) article {
+width: 100%;
+margin: 0;
+}
+}
+
+/*major breakpoint 2*/
+@media screen and (min-width: 67em) {
+header ul li span:first-of-type {
+margin-left: 1em;
+display: block;
+}
+
+header nav li:nth-child(2) > a {
+position: relative;
+}
+
+nav ul {
+max-width: 45em;
+width: 100%;
+}
+
+header ul li span {
+display: block;
+font-size: 1em;
+}
+
+header ul li a {
+display: flex;
+}
+
+nav ul {
+max-width: 45em;
+width: 100%
+}
+
+header ul li span {
+display: block;
+font-size: 1em;
+}
+
+header ul li a {
+display: flex;
+}
+
+#homepagina section:first-of-type div {
+display: grid;
+grid-template-columns: 33% auto auto;
+grid-column-gap: 1em;
+padding: 1em 2em 2em 2em;
+margin: 0 auto;
+min-width: 49em;
+max-width: 83em;
+}
+
+#homepagina section:nth-child(2){
+display: grid;
+grid-template-columns: 50.5% 49.5%;
+grid-column-gap: 2em;
+min-width: 49em;
+max-width: 83em;
+padding: 1em 2em 2em 2em;
+margin: 0 auto;
+}
+
+#homepagina section:nth-child(3) {
+min-width: 49em;
+max-width: 83em;
+padding: 0 2em;
+margin: auto auto;
+}
+
+#homepagina section:nth-child(3) article * {
+margin: 0;
+padding: 0;
+}
+
+#homepagina section:nth-child(4) {
+display: grid;
+grid-template-columns: 15em auto auto;
+grid-column-gap: 2em;
+margin: auto auto;
+padding: 0 2em;
+min-width: 49em;
+max-width: 83em;
+grid-row-gap: 2em;
+}
+
+#homepagina section:nth-child(4) article {
+margin: 0;
+width: 100%;
+}
+}
+
+/*login page styling*/
+body#loginpagina main > section:nth-child(1) {
+width: 100%;
+padding: 0;
+background-image: url(../SOURCE/studenten.jpg);
+background-position: 60% 55%;
+height: 14em;
+}
+
+#loginpagina section:nth-child(2) {
+background-color: transparent;
+margin: -5em auto -3em auto;
+width: calc(100% - 1em);
+max-width: 32em;
+}
+
+#loginpagina main section article {
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+#loginpagina section article:first-of-type {
+padding: 2em;
+}
+
+#loginpagina main section:nth-child(2) article:nth-child(2) {
+background-color: white;
+margin: 1em auto;
+width: 100%;
+padding: 2em;
+box-sizing: border-box
+}
+
+#loginpagina main section:nth-child(2) article:nth-child(2) h2 {
+margin: -.5em 0 0 0;
+}
+
+#loginpagina section h2 {
+font-size: 2em;
+color: #102F7D;
+margin: 0 0 .5em 0;
+padding: 0;
+}
+
+#loginpagina section article:first-of-type {
+font-size: 1em;
+background-color: #F6CA48;
+}
+
+#loginpagina section form label {
+display: grid;
+grid-row-gap: .35em;
+color: #102F7D;
+margin-bottom: 1.2em;
+}
+
+#loginpagina section form input {
+padding: .5em;
+border: none;
+font-size: 1em;
+outline: 0;
+}
+
+#loginpagina section a {
+color: #102F7D;
+border-bottom: 2px solid #102F7D;
+margin-top: 3em;
+padding-bottom: .3em;
+}
+
+#loginpagina section article:last-of-type h2:last-of-type {
+margin-top: 1.5em;
+}
+
+#loginpagina section:nth-child(2) ul {
+list-style: url(../SOURCE/checklistitem.svg);
+padding-left: 1em;
+color: white;
+margin-top: 1em;
+}
+
+
+#loginpagina section article ul:last-of-type {
+list-style: url(../SOURCE/sitelinklistitem.svg);
+color: white;
+margin-top: 2em;
+width: 11.1em
+}
+
+#loginpagina ul li {
+margin: 1em auto .5em auto
+}
+
+#loginpagina main ul li a {
+color: #3377CC;
+border: none;
+}
+
+#loginpagina  article:nth-child(2) input{
+border: 1px solid #102F7D;
+}
+
+#loginpagina article:nth-child(2) > form > h2 {
+padding: 1em 0;
+}
+
+/*hide wachtwoordvergeten form*/
+#loginpagina section:nth-child(2) article:first-child form:nth-child(3) {
+height: 0em;
+overflow: hidden
+}
+
+#loginpagina section:nth-child(2) article:first-child form:nth-child(3).showwachtwoordvergeten {
+height: 30em;
+height: 30em;
+overflow: hidden;
+transition: .25s;
+}
+
+#loginpagina article:nth-child(2) form {
+height: 0;
+overflow: hidden;
+margin-top: -1em;
+transition: .25s;
+}
+
+#loginpagina article:nth-child(2) form.showaanmelden {
+height: 31.5em;
+margin-top: 1.5em;
+transition: .25s;
+}
+
+body#loginpagina article input[type='submit']{
+    border: 0;
+    background-color: #3377CC;
+    color: white;
+    width: 100%;
+    margin-top: 1em;
+}
+
+/*form states*/
+#loginpagina section form input[type="submit"] {
+background-color: #3377CC;
+color: white;
+}
+#loginpagina section form input[type="submit"]:focus {
+transition: .25s;
+box-shadow: rgb(0, 92, 160) 0px -40px 0px 0px inset;
+}
+#loginpagina form input:invalid:focus{
+box-shadow: 0px 3px 0px 0px rgba(224,0,0,1);
+}
+#loginpagina form input:valid:focus{
+box-shadow: 0px 3px 0px 0px rgba(0,148,59,1);
+}
+
+#loginpagina form input:focus{
+transition: .20s;
+margin: .5em 0;
+background-color: #FFFBE3;
+}
+
+#loginpagina article form input[type="submit"]:hover{
+transition: .5s;
+    box-shadow: rgb(0, 92, 160) 0px -40px 0px 0px inset;
+}
+#loginpagina article form input[type="submit"]:active{
+transition: .5s;
+transition: .1s;    
+}
+
+/*footer styling*/
+#loginpagina section:last-of-type{
+background-color: white;
+height: 10em;
+width: 100%;
+    margin-top: 5em;
+}
+
+#loginpagina section:last-of-type ul {
+list-style: url(../SOURCE/sitelinklistitem.svg);
+color: #3377CC;
+padding: 2em 1em 0em 1em;
+width: 80%;
+margin: auto auto 0em;
+}
+
+#loginpagina section:last-of-type ul li a {
+margin-left: .5em;
+}
+
+#loginpagina section:last-of-type ul li {
+margin: 1em 0em
+}
+
+/*##################################################################*/
+/*droom pagina*/
+/*##################################################################*/
+
+/*droom verhaal styling*/
+header {
+z-index: 1;    
+}
+#droom main{
+
+}
+
+#droom section:first-of-type p {
+font-family: Somatic-Rounded;
+line-height: 1.5em;
+margin: auto auto;
+padding: 1em;
+min-width: 20em;
+max-width: 30em;
+line-height: 2em;
+}
+
+#droom section:first-of-type p {
+color: #21DFFC;
+}
+
+#droom section:first-of-type article:nth-child(3) p {
+color: #D2CB1C;
+}
+
+#droom section:first-of-type article:nth-child(5) p {
+color: #D2CB1C;
+}
+
+#droom section:first-of-type article:nth-child(6) p {
+color: #D21275;
+}
+
+#droom section:first-of-type {
+background-color: #010028;
+width: calc(100% - 2em);
+margin: auto auto;
+background-image: url(../SOURCE/droom/sterren.svg);
+animation: sterren 15s ease-in infinite;
+padding-bottom: 5em;
+}
+
+#droom section:first-of-type article {
+width: 100%;
+}
+
+#droom section article:first-of-type div {
+height: 20em;
+padding-top: 4em;
+position: relative;
+margin-bottom: -4em
+}
+#droom section article:first-of-type div h2{
+    color: transparent;
+}
+
+#droom section:first-of-type article div img {
+width: 20em;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto auto;
+position: absolute;
+}
+
+#droom section article:first-of-type div img:first-of-type {
+filter: blur(.08em);
+animation: ease-in;
+filter: blur(.08em);
+animation: ease-in;
+transition: 0.25s;
+top: 0;
+left: 0;
+}
+
+#droom section article:first-of-type div img:last-of-type {
+top: .5em;
+left: .5em;
+filter: blur(.08em);
+animation: ease-in;
+transition: 0.25s;
+}
+
+#droom section article:first-of-type div img:last-of-type:hover {
+top: 0em;
+left: 0em;
+filter: blur(.0em);
+animation: ease-in;
+transition: 0.25s;
+}
+
+#droom section article:first-of-type div img:first-of-type:hover {
+filter: blur(0em);
+top: 0em;
+left: 0em;
+animation: ease-in;
+transition: 0.25s;
+}
+
+#droom section:first-of-type article img {
+animation-name: illustratie1;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+#droom section:first-of-type article img:last-of-type {
+animation-name: illustratie2;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+#droom section:first-of-type article div {
+height: 17em;
+position: relative;
+}
+
+#droom section:first-of-type article:nth-child(2) div {
+height: 14em;
+}
+
+#droom section:first-of-type article:nth-child(3) div {
+height: 14em;
+padding: 1em 0 3em 0;
+}
+
+#droom section:first-of-type article:nth-child(4) div {
+height: 32em;
+padding: 2em 0;
+}
+
+#droom section:first-of-type article:nth-child(5) div {
+margin-top: 10em;
+position: relative;
+}
+
+#droom section:first-of-type article:nth-child(5) div::before {
+content: 'Niets is wat het lijkt..';
+font-family: Somatic-Rounded;
+font-size: 3em;
+display: flex;
+width: 6em;
+color: #D2CB1C;
+position: absolute;
+top: -2em;
+left: 30vw;
+right: 0em;
+transform: rotate(-5deg);
+animation: wathetlijkt 7s ease-in infinite;
+}
+
+#droom section:first-of-type article:nth-child(5) div::after {
+content: 'Niets is wat het lijkt..';
+font-family: Somatic-Rounded;
+font-size: 3em;
+display: flex;
+width: 6em;
+color: #D21275;
+position: absolute;
+top: -2.05em;
+left: 30.4vw;
+right: 0em;
+transform: rotate(-5deg);
+animation: wathetlijkt 10s ease-in infinite;
+}
+
+#droom article:nth-child(9) > div {
+height: 31.5em;
+}
+
+#droom section:first-of-type article div img {
+margin: auto auto;
+}
+
+/*zon, ster en maan illustraties*/
+#droom section > div:first-of-type {
+background-image: url(../SOURCE/droom/zon.svg);
+height: 30em;
+background-repeat: no-repeat;
+position: absolute;
+top: 75em;
+left: 1em;
+bottom: 0;
+width: 10em;
+background-position: right;
+animation: maanzon 10s ease-in infinite;
+}
+
+#droom section > div:nth-child(2) {
+background-image: url(../SOURCE/droom/maan.svg);
+height: 30em;
+background-repeat: no-repeat;
+position: absolute;
+top: -8em;
+right: 1em;
+bottom: 0;
+width: 20em;
+background-position: left;
+animation: maanzon 2s ease-in infinite;
+}
+
+#droom section > div:nth-child(3) {
+background-image: url(../SOURCE/droom/vallendester.svg);
+height: 5em;
+background-repeat: no-repeat;
+position: absolute;
+top: 18em;
+right: 15em;
+bottom: 0;
+width: 15em;
+background-position: right;
+animation: vallendester 3s ease-in;
+}
+
+#droom section > div:nth-child(4) {
+background-image: url(../SOURCE/droom/vallendester.svg);
+height: 6em;
+background-repeat: no-repeat;
+position: absolute;
+top: 150em;
+right: 0em;
+left: 0em;
+bottom: 0;
+width: 15em;
+background-position: right;
+animation: blur 5s ease-in infinite;
+}
+
+#droom section > div:nth-child(5) {
+background-image: url(../SOURCE/droom/vallendester.svg);
+height: 5em;
+background-repeat: no-repeat;
+position: absolute;
+top: 115em;
+right: 0em;
+left: 11em;
+bottom: 0;
+width: 15em;
+background-position: right;
+animation: blur 5s ease-in infinite;
+}
+
+/*comment section droom*/
+
+/*beoordeling plaatsen*/
+#droom section:nth-child(2) > h2 {
+color: #102F7D;
+margin: 4em auto;
+max-width: 32em;
+}
+
+#droom section:nth-child(2){
+width: calc(100% - 1em);
+box-sizing: border-box;
+max-width: 32em;
+margin: 0 auto;
+padding: 2em .5em;
+}
+#droom section:nth-child(2) article:first-of-type fieldset:first-of-type label{
+    display: none;
+}
+
+#droom section:nth-child(2) article {
+margin: 1em auto 2em auto;
+box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+#droom section:nth-child(2) > h2 {
+color: #102F7D;
+margin: 0 auto;
+max-width: 32em;
+padding: 0;
+margin: 0;
+}
+
+#droom section:nth-child(2) > h3 {
+color: #102F7D;
+margin: 1em 0 0 0;
+}
+
+#droom section:nth-child(2) > p {
+color: #102F7D;
+max-width: 32em;
+margin: 0 auto
+}
+
+#droom section:nth-child(2) article {
+background-color: white;
+padding: 1em;
+box-sizing: border-box;
+max-width: 32em;
+}
+
+#droom section:nth-child(2) article fieldset {
+margin: 1em 0 1em 0;
+padding: 0;
+}
+
+#droom section:nth-child(2) label {
+color: #102F7D;
+}
+
+#droom section:nth-child(2) article fieldset:first-of-type button {
+background: none;
+border: none;
+padding: 0;
+cursor: pointer;
+margin-right: 1.5em;
+}
+
+#droom section:nth-child(2) span {
+display: flex;
+margin: 1em 0
+}
+
+#droom section:nth-child(2) input[type="text"] {
+display: flex;
+padding: .5em;
+border: none;
+font-size: 1em;
+outline: 0;
+border: 1px solid #102F7D;
+width: calc(100% - 1em);
+margin: 1em auto;
+}
+
+#droom section:nth-child(2) input[type="text"]:focus {
+transition: .25s;
+padding: 1em 0.5em;
+}
+
+#droom section:nth-child(2) > article:nth-child(2) > form > input[type="submit"] {
+padding: .3em;
+border: 0px;
+width: 100%;
+font-size: 1em;
+color: white;
+background-repeat: no-repeat;
+box-shadow: rgb(0, 92, 160) 0px -2px 0px 0px inset;
+display: grid;
+margin: 1em auto 1em auto;
+}
+
+#droom section:nth-child(2) > article:nth-child(2) input[type="submit"] {
+padding: .3em;
+border: 0px;
+width: 100%;
+font-size: 1em;
+background-color: #3377CC;
+color: white;
+background-repeat: no-repeat;
+box-shadow: rgb(0, 92, 160) 0px -2px 0px 0px inset;
+display: grid;
+margin: 1em auto .5em auto;
+}
+
+#droom section:nth-child(2) > article:nth-child(2) input[type="submit"]:hover {
+box-shadow: rgb(0, 92, 160) 0px -50px 0px 0px inset;
+transition: .5s;
+}
+
+/*Geplaatste beoordelingen*/
+#droom section:nth-child(2) > h3 {
+margin-top: 6em;
+}
+
+#droom section:nth-child(2) > p {
+margin-bottom: -.2em;
+}
+
+#droom select {
+background-color: white;
+color: #3377CC;
+-webkit-appearance: none;
+-webkit-border-radius: 0px;
+background-image: url("../SOURCE/selecticon.svg");
+background-position: 95% 50%;
+background-repeat: no-repeat;
+width: calc(100% - 0.5em);
+padding: .3em;
+max-width: 15em;
+font-size: 1em;
+border: 1px solid #3377CC;
+}
+
+#droom section:nth-child(2) article:nth-child(5) > div {
+padding: 1em 0 0;
+border-bottom: 1px solid #E6E5E8;
+}
+
+#droom section:nth-child(2) article:nth-child(5) div div {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+#droom section:nth-child(2) article:nth-child(5) div div p {
+margin: 0 .5em 0 0;
+padding: 0;
+font-family: freeset-bold;
+color: #102F7D;
+}
+
+#droom section:nth-child(2) article:last-of-type div div img {
+margin: 0 0.2em 0 0;
+}
+
+#droom section:nth-child(2) article:nth-child(5) > div > p {
+padding: 0;
+margin: .5em 0;
+}
+
+#droom section:nth-child(2) article:last-of-type img {
+position: static;
+font-size: 1em;
+width: 1em;
+padding: 0;
+margin: 0;
+}
+
+#droom section:nth-child(2) > article:nth-child(5) footer ul {
+padding: 0;
+display: grid;
+grid-template-columns: auto auto auto;
+width: 8em;
+margin: -.5em 0 0 0;
+}
+
+#droom section:nth-child(2) > article:nth-child(5) footer ul li {
+display: flex;
+background-color: transparent;
+}
+
+#droom section:nth-child(2) > article:nth-child(5) footer ul li button {
+border: none;
+background-color: Transparent;
+}
+
+#droom section:nth-child(2) > article:nth-child(5) input[type="submit"] {
+padding: .3em;
+border: 0px;
+width: 100%;
+font-size: 1em;
+background-color: #E6E4E7;
+color: #3377CC;
+background-repeat: no-repeat;
+box-shadow: #a8a0ab 0px -2px 0px 0px inset;
+display: grid;
+margin: 1em auto .5em auto;
+}
+#droom section:nth-child(2) > article:nth-child(5) input[type="submit"]:hover {
+box-shadow: #a8a0ab 0px -40px 0px 0px inset;
+transition: .25s;
+}
+
+/*Pagina footer*/
+#droom section:last-of-type{
+background-color: white;
+height: 10em;
+width: 100%;
+}
+
+#droom section:last-of-type ul {
+list-style: url(../SOURCE/sitelinklistitem.svg);
+color: #3377CC;
+padding: 2em 1em 0em 1em;
+width: 80%;
+margin: auto auto 0em;
+}
+
+#droom section:last-of-type ul li a {
+margin-left: .5em;
+}
+
+#droom section:last-of-type ul li {
+margin: 1em 0em
+}
+
+
+/*verhaal breakpoint 1*/
+@media screen and (min-width: 46em) {
+#droom section:first-of-type > div {
+display: grid;
+grid-template-columns: auto auto;
+max-width: 66em;
+margin: auto auto;
+box-sizing: border-box;
+}
+
+#droom section:first-of-type article:first-of-type {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+#droom section:first-of-type article:first-of-type {
+min-width: 100%;
+}
+
+#droom section:first-of-type article:nth-child(3) div {
+margin-top: 10em;
+}
+
+#droom section:first-of-type article:nth-child(4) div {
+margin-top: -14em;
+height: 32em;
+}
+
+#droom section:first-of-type article:nth-child(5) div {
+margin-top: 10em;
+position: relative;
+}
+
+#droom section:first-of-type article:nth-child(6) {
+margin-top: -8em;
+}
+
+#droom article:nth-child(11) > div {
+margin-top: -11em;
+}
+
+#droom section > div:first-of-type {
+background-image: url(../SOURCE/droom/zon.svg);
+height: 30em;
+background-repeat: no-repeat;
+position: absolute;
+top: 75em;
+left: 1em;
+bottom: 0;
+width: 10em;
+background-position: right;
+animation: maanzon 10s ease-in infinite;
+margin: 0em auto 0 0;
+}
+
+#droom section > div:nth-child(2) {
+background-image: url(../SOURCE/droom/maan.svg);
+height: 30em;
+background-repeat: no-repeat;
+position: absolute;
+top: -8em;
+right: 1em;
+bottom: 0;
+width: 20em;
+background-position: left;
+animation: maanzon 2s ease-in infinite;
+}
+
+#droom section:first-of-type article:nth-child(5) div::before {
+left: 10vw;
+}
+#droom section > div:nth-child(2){
+background-size: cover;
+width: 30em;
+height: 50em;
+top: -20em;
+}}
+
+@media screen and (min-width: 72em) {
+#droom section:first-of-type > div {
+display: block;
+max-width: 62em;
+margin: auto auto;
+}
+
+#droom section:first-of-type article {
+padding: 0;
+margin: 0em 0em 4em 0;
+display: grid;
+grid-auto-columns: 20em 40em;
+justify-items: center;
+align-items: center;
+height: auto;
+grid-column-gap: 2em;
+}
+
+#droom section:first-of-type article:first-of-type {
+height: 20em;
+}
+
+#droom section:first-of-type article:first-of-type img {
+margin: auto auto -8em auto;
+width: 30em
+}
+
+#droom section:first-of-type article:first-of-type div {
+width: 100%;
+}
+
+#droom section:first-of-type article:first-of-type {
+width: 100%;
+}
+
+#droom section:first-of-type article:first-of-type div {
+padding: 0;
+margin: 0;
+height: auto;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+#droom section:first-of-type article p {
+grid-column-start: 2;
+padding: 0;
+margin: 0;
+width: 100%;
+max-width: 40em;
+}
+#droom section:first-of-type article div {
+margin: 0;
+padding: 0;
+}
+
+#droom section:first-of-type article div img {
+margin: 0;
+padding: 0;
+justify-self: start;
+margin-left: -10em;
+}
+
+#droom section:first-of-type article:nth-child(3) div {
+height: 10em;
+margin: 2em auto;
+}
+
+#droom section:first-of-type article:nth-child(4) div {
+height: 15em;
+margin: 2em auto 2em auto;
+padding-bottom: 7em;
+}
+
+#droom section:first-of-type article:nth-child(4) div img:first-of-type {
+height: 20em;
+}
+
+#droom section:first-of-type article:nth-child(4) div img:last-of-type {
+height: 20em;
+}
+
+#droom section:first-of-type article:nth-child(5) div {
+height: 0em;
+margin: 2em auto 2em auto;
+}
+
+#droom section:first-of-type article:nth-child(6) {
+height: 18em;
+margin: 5em auto 2em auto;
+padding-top: 4em;
+}
+
+#droom section:first-of-type article:nth-child(5) div::before {
+top: -3em;
+left: -8vw;
+}
+
+#droom section:first-of-type article:nth-child(5) div::after {
+top: -3.02em;
+left: -8.3vw;
+}
+}

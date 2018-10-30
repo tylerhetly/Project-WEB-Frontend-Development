@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="509px" height="505px" viewBox="0 0 509 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="58.0499255%" gradientTransform="translate(0.500000,0.500000),scale(1.000000,0.998251),rotate(96.786186),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="74.7551773%" gradientTransform="translate(0.500000,0.500000),scale(1.000000,0.998251),rotate(105.775791),translate(-0.500000,-0.500000)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <ellipse id="path-3" cx="165.506024" cy="165.796075" rx="165.506024" ry="165.796075"></ellipse>
+        <ellipse id="path-5" cx="165.506024" cy="165.796075" rx="165.506024" ry="165.796075"></ellipse>
+        <ellipse id="path-7" cx="165.506024" cy="165.796075" rx="165.506024" ry="165.796075"></ellipse>
+    </defs>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-Copy-4" transform="translate(-1243.000000, -119.000000)">
+            <g id="Group-6-Copy-2" transform="translate(1243.000000, 119.000000)">
+                <g id="Group" opacity="0.680691964" transform="translate(0.000000, 15.000000)">
+                    <ellipse id="Oval-2" fill="url(#radialGradient-1)" fill-rule="nonzero" cx="240.585198" cy="241.006826" rx="240.585198" ry="241.006826"></ellipse>
+                    <ellipse id="Oval-2-Copy" fill="url(#radialGradient-2)" fill-rule="nonzero" cx="241.414802" cy="245.993174" rx="240.585198" ry="241.006826"></ellipse>
+                    <g id="Combined-Shape" transform="translate(75.493976, 75.626280)">
+                        <g id="Oval-3">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#010028" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            <ellipse fill="#0D0C3A" fill-rule="nonzero" mask="url(#mask-4)" cx="234.363167" cy="133.384812" rx="187.075731" ry="187.403584"></ellipse>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-4" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="131.492255" cy="241.422355" rx="33.5989673" ry="33.6578498"></ellipse>
+                    <ellipse id="Oval-4-Copy" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="207.815835" cy="365.25" rx="20.3253012" ry="20.3609215"></ellipse>
+                    <ellipse id="Oval-4-Copy-2" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="299.072289" cy="296.272184" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-3" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="178.77969" cy="132.553754" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-5" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="355.070568" cy="208.595563" rx="14.9328744" ry="14.9590444"></ellipse>
+                    <ellipse id="Oval-4-Copy-6" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="246.392427" cy="229.372014" rx="11.6144578" ry="11.6348123"></ellipse>
+                    <ellipse id="Oval-4-Copy-9" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="266.717728" cy="168.289249" rx="22.8141136" ry="22.8540956"></ellipse>
+                    <ellipse id="Oval-4-Copy-4" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="265.473322" cy="97.2337884" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-7" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="306.953528" cy="373.145051" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-8" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="369.173838" cy="285.883959" rx="7.46643718" ry="7.47952218"></ellipse>
+                </g>
+                <g id="Group-Copy" opacity="0.680691964" transform="translate(27.000000, 22.000000)">
+                    <ellipse id="Oval-2" fill="url(#radialGradient-1)" fill-rule="nonzero" cx="240.585198" cy="241.006826" rx="240.585198" ry="241.006826"></ellipse>
+                    <ellipse id="Oval-2-Copy" fill="url(#radialGradient-2)" fill-rule="nonzero" cx="241.414802" cy="245.993174" rx="240.585198" ry="241.006826"></ellipse>
+                    <g id="Combined-Shape" transform="translate(75.493976, 75.626280)">
+                        <g id="Oval-3">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#010028" fill-rule="nonzero" xlink:href="#path-5"></use>
+                            <ellipse fill="#0D0C3A" fill-rule="nonzero" mask="url(#mask-6)" cx="234.363167" cy="133.384812" rx="187.075731" ry="187.403584"></ellipse>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-4" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="131.492255" cy="241.422355" rx="33.5989673" ry="33.6578498"></ellipse>
+                    <ellipse id="Oval-4-Copy" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="207.815835" cy="365.25" rx="20.3253012" ry="20.3609215"></ellipse>
+                    <ellipse id="Oval-4-Copy-2" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="299.072289" cy="296.272184" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-3" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="178.77969" cy="132.553754" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-5" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="355.070568" cy="208.595563" rx="14.9328744" ry="14.9590444"></ellipse>
+                    <ellipse id="Oval-4-Copy-6" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="246.392427" cy="229.372014" rx="11.6144578" ry="11.6348123"></ellipse>
+                    <ellipse id="Oval-4-Copy-9" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="266.717728" cy="168.289249" rx="22.8141136" ry="22.8540956"></ellipse>
+                    <ellipse id="Oval-4-Copy-4" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="265.473322" cy="97.2337884" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-7" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="306.953528" cy="373.145051" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-8" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="369.173838" cy="285.883959" rx="7.46643718" ry="7.47952218"></ellipse>
+                </g>
+                <g id="Group-Copy-2" opacity="0.680691964" transform="translate(8.000000, 0.000000)">
+                    <ellipse id="Oval-2" fill="url(#radialGradient-1)" fill-rule="nonzero" cx="240.585198" cy="241.006826" rx="240.585198" ry="241.006826"></ellipse>
+                    <ellipse id="Oval-2-Copy" fill="url(#radialGradient-2)" fill-rule="nonzero" cx="241.414802" cy="245.993174" rx="240.585198" ry="241.006826"></ellipse>
+                    <g id="Combined-Shape" transform="translate(75.493976, 75.626280)">
+                        <g id="Oval-3">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="Mask" fill="#010028" fill-rule="nonzero" xlink:href="#path-7"></use>
+                            <ellipse fill="#1D1C5E" fill-rule="nonzero" mask="url(#mask-8)" cx="234.363167" cy="133.384812" rx="187.075731" ry="187.403584"></ellipse>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-4" stroke="#171753" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="131.492255" cy="241.422355" rx="33.5989673" ry="33.6578498"></ellipse>
+                    <ellipse id="Oval-4-Copy" stroke="#171753" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="207.815835" cy="365.25" rx="20.3253012" ry="20.3609215"></ellipse>
+                    <ellipse id="Oval-4-Copy-2" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="299.072289" cy="296.272184" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-3" stroke="#171753" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="178.77969" cy="132.553754" rx="13.6884682" ry="13.7124573"></ellipse>
+                    <ellipse id="Oval-4-Copy-5" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="355.070568" cy="208.595563" rx="14.9328744" ry="14.9590444"></ellipse>
+                    <ellipse id="Oval-4-Copy-6" stroke="#171753" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="246.392427" cy="229.372014" rx="11.6144578" ry="11.6348123"></ellipse>
+                    <ellipse id="Oval-4-Copy-9" stroke="#171753" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="266.717728" cy="168.289249" rx="22.8141136" ry="22.8540956"></ellipse>
+                    <ellipse id="Oval-4-Copy-4" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="265.473322" cy="97.2337884" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-7" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="306.953528" cy="373.145051" rx="7.46643718" ry="7.47952218"></ellipse>
+                    <ellipse id="Oval-4-Copy-8" stroke="#0D0C3A" stroke-width="8" fill="#010028" fill-rule="nonzero" cx="369.173838" cy="285.883959" rx="7.46643718" ry="7.47952218"></ellipse>
+                </g>
+                <polygon id="Rectangle-6" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" points="35 15 486 15 486 487 35 487"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

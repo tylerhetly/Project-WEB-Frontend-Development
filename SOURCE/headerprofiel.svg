@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>002-user copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="14.5" cy="14.2083333" rx="14.5" ry="14.2083333"></ellipse>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-621.000000, -681.000000)">
+            <g id="002-user-copy" transform="translate(623.000000, 683.000000)">
+                <g id="Group-2">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <ellipse stroke="#000066" stroke-width="1.3" cx="14.5" cy="14.2083333" rx="15.15" ry="14.8583333"></ellipse>
+                    <ellipse id="Oval" stroke="#000066" stroke-width="1.3" fill-rule="nonzero" mask="url(#mask-2)" cx="14.5" cy="9.25193798" rx="6.40697674" ry="6.60852713"></ellipse>
+                    <path d="M14.5,18.503876 C7.98175194,18.503876 2.69767442,23.8296014 2.69767442,30.3992248 L26.3023256,30.3992248 C26.3023256,23.8296014 21.0182481,18.503876 14.5,18.503876 Z" id="Shape" stroke="#000066" stroke-width="1.3" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+                <g id="002-user" transform="translate(2.636364, 2.583333)"></g>
+            </g>
+        </g>
+    </g>
+</svg>
